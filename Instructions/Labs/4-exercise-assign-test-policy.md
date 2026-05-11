@@ -28,7 +28,7 @@ This exercise includes the following tasks:
 Use Azure Policy to enforce organizational standards. Policies can deny noncompliant resource creation automatically, preventing costly mistakes before they happen.
 
 1.  In the portal search bar, search for **Policy** and select **Policy**.
-2.  In the left menu, select **Definitions**.
+2.  In the left menu, under **Authoring**, select **Definitions**.
 3.  In the search box, search for **Allowed locations**.
 4.  Select the **Allowed locations** policy definition.
 5.  Select **Assign**.
@@ -46,7 +46,7 @@ Test that the policy prevents resource creation in disallowed regions. This vali
 1.  In the portal search bar, search for **Storage accounts** and select **Storage accounts**.
 2.  Select **+ Create**.
 3.  On the **Basics** tab, select **rg-gp-cost-guardrails** as the resource group.
-4.  For **Storage account name**, enter a temporary name (for example, **stgppolicytest** followed by your initials).
+4.  For **Storage account name**, enter a temporary name (for example, `stgppolicytest` followed by your initials).
 5.  For **Region**, select a region that is **not** the allowed location you configured in the policy.
 6.  Select **Review + create**.
 7.  Confirm the creation is denied with a policy error message. Note the error—it references the **Allowed locations** policy by name.
