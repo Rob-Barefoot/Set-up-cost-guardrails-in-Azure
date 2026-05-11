@@ -26,31 +26,27 @@ This exercise includes the following tasks:
 
 Navigate to the Cost Management service where you define spend limits and alerts. This is the central place to monitor and control cloud spending across your subscription and resources.
 
-1.  In the portal search bar, search for **Cost Management + Billing** and select **Cost Management + Billing**.
-2.  In the left menu, select **Budgets**.
+1.  In the portal search bar, search for **Cost Management** and select **Cost Management**.
+2.  In the left menu, under **Monitoring**, select **Budgets**.
 3.  Select **+ Add**.
-4.  Choose a scope you can manage. If resource-group-level budgets are available in your environment, use **rg-gp-cost-guardrails**. Otherwise use the subscription scope and note the broader scope in your validation notes.
 
 > [!NOTE]
-> **Validation step:** Confirm Cost Management + Billing is open and you have selected your budget scope.
+> **Validation step:** Confirm Cost Management is open and you have selected your budget scope.
 
 ## Task 2: Configure and create the budget
 
 Set up your budget parameters including amount, reset period, and alert thresholds. These alerts will notify you before you overspend, giving you time to investigate and adjust.
 
-1.  For **Name**, enter **gp-pilot-budget**.
-2.  For **Reset period**, select **Monthly**.
-3.  For **Amount**, enter a small test value such as **10** (USD or your billing currency).
-4.  Select **Next** to move to the alerts section.
-5.  Select **+ Add** to add an alert condition.
-6.  For **Type**, select **Actual**.
-7.  For the threshold, enter **80** percent.
-8.  In the **Alert recipients** field, enter your email address.
-9.  Select **+ Add** to add a second alert condition.
-10. For **Type**, select **Actual**.
-11. For the threshold, enter **100** percent.
-12. In the **Alert recipients** field, enter the same email address.
-13. Select **Create**.
+1. For **Name**, enter **gp-pilot-budget**.
+2. For **Reset period**, select **Monthly**.
+3. For **Amount**, enter a small test value such as **10** (USD or your billing currency).
+4. Select **Next** to move to the alerts section.
+5. For **Type**, select **Actual**.
+6. For the threshold, enter **80** percent.
+7. For **Type**, select **Actual cost**.
+8. For the threshold, enter **100** percent.
+9. In the **Alert recipients** field, enter the same email address.
+10. Select **Create**.
 
 > [!NOTE]
 > **Validation step:** Confirm the **gp-pilot-budget** appears in the budgets list with two alert thresholds (80% and 100%).
