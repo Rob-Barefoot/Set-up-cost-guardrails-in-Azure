@@ -37,14 +37,14 @@ Navigate to the Cost Management service where you define spend limits and alerts
 
 Set up your budget parameters including amount, reset period, and alert thresholds. These alerts will notify you before you overspend, giving you time to investigate and adjust.
 
-1. For **Name**, enter **gp-pilot-budget**.
+1. For **Name**, enter `gp-pilot-budget`.
 2. For **Reset period**, select **Monthly**.
-3. For **Amount**, enter a small test value such as **10** (USD or your billing currency).
+3. For **Amount**, enter a small test value such as `10 (USD or your billing currency).
 4. Select **Next** to move to the alerts section.
 5. For **Type**, select **Actual**.
-6. For the threshold, enter **80** percent.
+6. For the threshold, enter `80` percent.
 7. For **Type**, select **Actual cost**.
-8. For the threshold, enter **100** percent.
+8. For the threshold, enter `100` percent.
 9. In the **Alert recipients** field, enter the same email address.
 10. Select **Create**.
 
